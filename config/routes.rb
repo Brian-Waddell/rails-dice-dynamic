@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get("/dice/1/20", {:controller => "zebra", :action => "bird"})
 
   get("/dice/5/4", {:controller => "zebra", :action => "mouse"})
+
+ get("/dice/:random/:number", {:controller => "zebra", :action => "generator"})
+
 end
